@@ -1,0 +1,15 @@
+ServerRoot "/etc/httpd"
+Listen <%= node["httpd"]["port"] %>
+User apache
+Group apache
+ServerAdmin root@localhost
+ErrorLog "logs/error_log"
+TypesConfig /etc/mime.types
+Include conf.modules.d/*.conf
+DocumentRoot "/var/www/html"
+
+<Directory "/var/www/html">
+  Require all granted
+</Directory>
+
+IncludeOptional conf.d/*.conf
