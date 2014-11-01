@@ -1,0 +1,15 @@
+/Users/kyaukyuai/.anyenv/envs/rbenv/versions/2.1.0/bin/ruby extconf.rb 
+creating Makefile
+/Users/kyaukyuai/vagrant-centos/.vendor/ruby/2.1.0/gems/libyajl2-1.1.0/ext/libyajl2
+
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+make "DESTDIR=" install
+mkdir -p /Users/kyaukyuai/vagrant-centos/.vendor/ruby/2.1.0/gems/libyajl2-1.1.0/lib/libyajl2/vendored-libyajl2/lib
+cp libyajl.bundle /Users/kyaukyuai/vagrant-centos/.vendor/ruby/2.1.0/gems/libyajl2-1.1.0/lib/libyajl2/vendored-libyajl2/lib/libyajl.bundle
+mkdir -p /Users/kyaukyuai/vagrant-centos/.vendor/ruby/2.1.0/gems/libyajl2-1.1.0/lib/libyajl2/vendored-libyajl2/include/yajl
+cp yajl/*.h /Users/kyaukyuai/vagrant-centos/.vendor/ruby/2.1.0/gems/libyajl2-1.1.0/lib/libyajl2/vendored-libyajl2/include/yajl

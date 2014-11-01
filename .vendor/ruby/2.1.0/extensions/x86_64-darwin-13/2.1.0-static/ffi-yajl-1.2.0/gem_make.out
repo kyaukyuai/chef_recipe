@@ -1,0 +1,15 @@
+/Users/kyaukyuai/.anyenv/envs/rbenv/versions/2.1.0/bin/ruby extconf.rb 
+-I/Users/kyaukyuai/vagrant-centos/.vendor/ruby/2.1.0/gems/libyajl2-1.1.0/lib/libyajl2/vendored-libyajl2/include  -O3 -Wno-error=shorten-64-to-32  -pipe
+-L/Users/kyaukyuai/vagrant-centos/.vendor/ruby/2.1.0/gems/libyajl2-1.1.0/lib/libyajl2/vendored-libyajl2/lib -L. -L/Users/kyaukyuai/.anyenv/envs/rbenv/versions/2.1.0/lib  -fstack-protector
+checking for yajl/yajl_tree.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling parser.c
+linking shared-object ffi_yajl/ext/parser.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 parser.bundle ./.gem.20141101-23376-2rd5yv/ffi_yajl/ext
+installing default parser libraries
