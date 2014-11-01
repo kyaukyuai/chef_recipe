@@ -1,6 +1,7 @@
 {
   "run_list": [
-
+    "recipe[base_packages]",
+    "recipe[httpd]"
   ],
   "automatic": {
     "ipaddress": "vagrant-centos"
